@@ -46,4 +46,3 @@ export PATH="$HOME/.cargo/bin:$PATH"
 
 # CowSay
 cowsay -f tux I use arch, BTW ~~
-
