@@ -1,0 +1,5 @@
+[/]
+button-layout='appmenu:minimize,maximize,close'
+num-workspaces=6
+titlebar-font='Taipei Sans TC Beta Bold 11'
+workspace-names=['WWW', 'DEV', 'CMD', 'DIR', 'MUS', 'GIT']
