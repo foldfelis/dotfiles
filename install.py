@@ -28,7 +28,7 @@ def main():
     ln("dot/.zshrc", "/home/n/.zshrc")
 
     # Rofi
-    # ln("rofi", "/home/n/.config/rofi")
+    ln("rofi", "/home/n/.config/rofi")
 
 
 if __name__ == '__main__':
