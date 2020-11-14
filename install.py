@@ -18,6 +18,9 @@ def ln(src_path, ln_path):
 
 
 def main():
+    # spectrwm
+    ln("dot/.spectrwm.conf", "/home/n/.spectrwm.conf")
+
     # gnuplot
     ln("dot/.gnuplot", "/home/n/.gnuplot")
 
@@ -29,6 +32,9 @@ def main():
 
     # Rofi
     ln("rofi", "/home/n/.config/rofi")
+
+    # alacritty
+    ln("alacritty", "/home/n/.config/alacritty")
 
 
 if __name__ == '__main__':
