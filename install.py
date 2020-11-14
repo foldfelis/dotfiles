@@ -21,6 +21,9 @@ def main():
     # spectrwm
     ln("dot/.spectrwm.conf", "/home/n/.spectrwm.conf")
 
+    # IME
+    ln("dot/.xinitrc", "/home/n/.xinitrc")
+
     # gnuplot
     ln("dot/.gnuplot", "/home/n/.gnuplot")
 
