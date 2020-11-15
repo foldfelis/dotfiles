@@ -26,8 +26,9 @@ cpu() {
 
 ## VOLUME
 vol() {
-    vol=`pactl list sinks | grep Volume:\ front | awk -F ',' 'END{print $2}' | awk -F ' ' 'END{print $6"dB:"$4}' | sed 's/on://g'`
-    echo -e "VOL: $vol"
+  vol=`pactl list sinks | grep Volume:\ front | awk -F ',' '{print $2}' | awk -F ' ' '{print $4"("$6"dB)"}'`
+  mut=`pactl list sinks | grep -o Mute:\ yes | awk -F ':' '{print $1" "}'`
+  echo -e "VOL: $mut$vol"
 }
 
 SLEEP_SEC=0.5
@@ -38,6 +39,6 @@ SLEEP_SEC=0.5
 # So I would love to add more functions to this script but it makes the 
 # echo output too long to display correctly.
 while :; do
-    echo "+@fg=1;$(cpu) +@fg=0; | +@fg=2;$(mem) +@fg=0; | +@fg=3;$(hdd) +@fg=0; | +@fg=4;$(vol) +@fg=0; |"
-    sleep $SLEEP_SEC
+  echo "+@fg=1;$(cpu) +@fg=0; | +@fg=2;$(mem) +@fg=0; | +@fg=3;$(hdd) +@fg=0; | +@fg=4;$(vol) +@fg=0; |"
+  sleep $SLEEP_SEC
 done
