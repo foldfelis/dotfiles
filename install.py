@@ -18,9 +18,6 @@ def ln(src_path, ln_path):
 
 
 def main():
-    # spectrwm
-    ln("dot/.spectrwm.conf", "/home/n/.spectrwm.conf")
-
     # IME
     ln("dot/.xinitrc", "/home/n/.xinitrc")
 
@@ -33,11 +30,14 @@ def main():
     # zsh
     ln("dot/.zshrc", "/home/n/.zshrc")
 
-    # Rofi
-    ln("rofi", "/home/n/.config/rofi")
-
     # alacritty
     ln("alacritty", "/home/n/.config/alacritty")
+    
+    # kde
+    ln("kde/kglobalshortcutsrc", "/home/n/.config/kglobalshortcutsrc")
+    ln("kde/kwinrc", "/home/n/.config/kwinrc")
+    ln("kde/kwinrulesrc", "/home/n/.config/kwinrulesrc")
+    ln("kde/plasma-org.kde.plasma.desktop-appletsrc", "/home/n/.config/plasma-org.kde.plasma.desktop-appletsrc")
 
 
 if __name__ == '__main__':
