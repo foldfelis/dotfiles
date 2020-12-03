@@ -19,7 +19,7 @@ def ln(src_path, ln_path):
 
 def main():
     # IME
-    ln("dot/.xinitrc", "/home/n/.xinitrc")
+    ln("dot/.xprofile", "/home/n/.xprofile")
 
     # gnuplot
     ln("dot/.gnuplot", "/home/n/.gnuplot")
