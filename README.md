@@ -27,3 +27,9 @@ Add the following command to `Settings > Keyboard shoercut > add`
 ```sh
 rofi -show drun -theme slate -show-icons -icon-theme Papirus-Dark
 ```
+
+## Swap `ESC` and `CapsLock`
+
+```sh
+setxkbmap -option caps:swapescape
+```
