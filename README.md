@@ -33,5 +33,5 @@ rofi -show drun -theme slate -show-icons -icon-theme Papirus-Dark
 `ESC` and `CapsLock`
 
 ```sh
-dconf write /org/gnome/desktop/input-sources/xkb-options "'caps:swapescape'"
+dconf write /org/gnome/desktop/input-sources/xkb-options "['caps:swapescape']"
 ```
