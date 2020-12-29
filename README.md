@@ -28,8 +28,10 @@ Add the following command to `Settings > Keyboard shoercut > add`
 rofi -show drun -theme slate -show-icons -icon-theme Papirus-Dark
 ```
 
-## Swap `ESC` and `CapsLock`
+## Swap keys
+
+`ESC` and `CapsLock`
 
 ```sh
-setxkbmap -option caps:swapescape
+dconf write /org/gnome/desktop/input-sources/xkb-options "'caps:swapescape'"
 ```
