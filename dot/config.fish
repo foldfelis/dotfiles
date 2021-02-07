@@ -64,10 +64,10 @@ alias yt-best="youtube-dl -f bestvideo+bestaudio "
 alias yt-mp3="youtube-dl --extract-audio --audio-format mp3 "
 alias yt-f="youtube-dl -f "
 
-### SETTING THE STARSHIP PROMPT ###
-starship init fish | source
-
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 eval ~/anaconda3/bin/conda "shell.fish" "hook" $argv | source
 # <<< conda initialize <<<
+
+### SETTING THE STARSHIP PROMPT ###
+starship init fish | source
