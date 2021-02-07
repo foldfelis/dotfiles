@@ -19,14 +19,17 @@ def ln(src_path, ln_path):
 
 
 def main():
+    # fish
+    ln("dot/config.fish", f"/home/{getuser()}/.config/fish/config.fish")
+
+    # starship
+    ln("dot/starship.toml", f"/home/{getuser()}/.config/starship.toml")
+
     # gnuplot
     ln("dot/.gnuplot", f"/home/{getuser()}/.gnuplot")
 
     # xterm
     ln("dot/.Xresources", f"/home/{getuser()}/.Xresources")
-
-    # zsh
-    ln("dot/.zshrc", f"/home/{getuser()}/.zshrc")
 
     # Rofi
     ln("rofi", f"/home/{getuser()}/.config/rofi")
