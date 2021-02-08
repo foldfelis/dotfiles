@@ -35,3 +35,11 @@ rofi -show drun -theme slate -show-icons -icon-theme Papirus-Dark
 ```sh
 dconf write /org/gnome/desktop/input-sources/xkb-options "['caps:swapescape']"
 ```
+
+## GDM auto-suspend
+
+GDM uses a separate dconf database to control power management. To only disable auto-suspend on AC, run:
+
+```sh
+sudo -u gdm dbus-launch gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-type 'nothing'
+```
