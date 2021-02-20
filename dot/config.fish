@@ -62,6 +62,7 @@ alias pscpu='ps auxf | sort -nr -k 3'
 alias pscpu10='ps auxf | sort -nr -k 3 | head -10'
 
 # youtube-dl
+alias yt="mpv --ytdl-raw-options=yes-playlist= --ytdl-format=bestvideo+bestaudio/best "
 alias yt-search="youtube-dl -F "
 alias yt-best="youtube-dl -f bestvideo+bestaudio "
 alias yt-mp3="youtube-dl --extract-audio --audio-format mp3 "
