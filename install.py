@@ -34,9 +34,6 @@ def main():
     # xterm
     ln("dot/.Xresources", f"/home/{getuser()}/.Xresources")
 
-    # Rofi
-    ln("rofi", f"/home/{getuser()}/.config/rofi")
-
     # mpv
     ln("mpv", f"/home/{getuser()}/.config/mpv")
 

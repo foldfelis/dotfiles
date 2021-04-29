@@ -74,7 +74,7 @@ eval ~/anaconda3/bin/conda "shell.fish" "hook" $argv | source
 # <<< conda initialize <<<
 
 # Julia
-alias julia="julia --proj -t 16"
+alias julia="julia --proj -t 8"
 
 ### SETTING THE STARSHIP PROMPT ###
 starship init fish | source
