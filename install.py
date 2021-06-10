@@ -22,9 +22,6 @@ def main():
     # fish
     ln("dot/config.fish", f"/home/{getuser()}/.config/fish/config.fish")
 
-    # paru
-    ln("paru", f"/home/{getuser()}/.config/paru")
-
     # starship
     ln("dot/starship.toml", f"/home/{getuser()}/.config/starship.toml")
 
