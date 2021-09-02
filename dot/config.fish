@@ -74,7 +74,8 @@ alias yt-f="youtube-dl -f "
 # <<< conda initialize <<<
 
 # Julia
-alias julia="julia --proj -t 8"
+alias jl="julia --proj -t 16"
 
 ### SETTING THE STARSHIP PROMPT ###
 starship init fish | source
+status --is-login; and status --is-interactive; and exec byobu-launcher
