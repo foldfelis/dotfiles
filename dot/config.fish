@@ -5,9 +5,9 @@ cowsay I use Arch, btw~~;
 set fish_greeting
 # Sets the terminal type
 set TERM "xterm-256color"
-# $EDITOR use Emacs in terminal
+# $EDITOR use VSCode in terminal
 set EDITOR "code"
-# $VISUAL use Emacs in GUI mode
+# $VISUAL use VSCode in GUI mode
 set VISUAL "code"
 
 ### SET EITHER DEFAULT EMACS MODE OR VI MODE ###
@@ -68,13 +68,8 @@ alias yt-best="youtube-dl -f bestvideo+bestaudio "
 alias yt-mp3="youtube-dl --extract-audio --audio-format mp3 "
 alias yt-f="youtube-dl -f "
 
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-#eval ~/anaconda3/bin/conda "shell.fish" "hook" $argv | source
-# <<< conda initialize <<<
-
 # Julia
-alias jl="julia --proj -t 16"
+alias jl="julia --proj -t 8"
 
 ### SETTING THE STARSHIP PROMPT ###
 starship init fish | source
