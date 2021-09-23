@@ -1,8 +1,9 @@
-# Greeting
-cowsay I use Arch, btw~~;
+status --is-login; and status --is-interactive; and exec byobu-launcher
 
 # Supresses fish's intro message
-set fish_greeting
+function fish_greeting
+    cowsay I use Arch, btw ~~
+end
 # Sets the terminal type
 set TERM "xterm-256color"
 # $EDITOR use VSCode in terminal
@@ -69,8 +70,7 @@ alias yt-mp3="youtube-dl --extract-audio --audio-format mp3 "
 alias yt-f="youtube-dl -f "
 
 # Julia
-alias jl="julia --proj -t 8"
+alias j="julia --proj -t 8"
 
 ### SETTING THE STARSHIP PROMPT ###
 starship init fish | source
-status --is-login; and status --is-interactive; and exec byobu-launcher
