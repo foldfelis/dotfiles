@@ -70,7 +70,7 @@ alias yt-mp3="youtube-dl --extract-audio --audio-format mp3 "
 alias yt-f="youtube-dl -f "
 
 # Julia
-alias j="julia --proj -t 8 -i"
+alias jl="julia -t 8 -i --proj "
 
 ### SETTING THE STARSHIP PROMPT ###
 starship init fish | source
