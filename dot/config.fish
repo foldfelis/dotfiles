@@ -64,13 +64,13 @@ alias pscpu10='ps auxf | sort -nr -k 3 | head -10'
 
 # youtube-dl
 alias yt="mpv --ytdl-raw-options=yes-playlist= --ytdl-format=bestvideo+bestaudio/best "
-alias yt-search="youtube-dl -F "
-alias yt-best="youtube-dl -f bestvideo+bestaudio "
-alias yt-mp3="youtube-dl --extract-audio --audio-format mp3 "
-alias yt-f="youtube-dl -f "
+alias yt-search="yt-dlp -F "
+alias yt-best="yt-dlp -f bestvideo+bestaudio "
+alias yt-mp3="yt-dlp --extract-audio --audio-format mp3 "
+alias yt-f="yt-dlp -f "
 
 # Julia
-alias jl="julia -t 8 -i --proj "
+alias jl="julia -t 24 -i --proj "
 
 ### SETTING THE STARSHIP PROMPT ###
 starship init fish | source
