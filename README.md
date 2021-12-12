@@ -43,3 +43,9 @@ GDM uses a separate dconf database to control power management. To only disable 
 ```sh
 sudo -u gdm dbus-launch gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-type 'nothing'
 ```
+
+## GDM 4K scale
+
+```sh
+sudo -u gdm dbus-launch gsettings set org.gnome.desktop.interface scaling-factor 2
+```
