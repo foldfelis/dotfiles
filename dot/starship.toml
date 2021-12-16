@@ -22,5 +22,9 @@ format =  "@ [$hostname](bold red) "
 format = "[$symbol$environment](dimmed green) "
 
 [julia]
-symbol = "∴ "
+symbol = " "
 style = "bold red"
+
+[python]
+symbol = " "
+style = "bold blue"
