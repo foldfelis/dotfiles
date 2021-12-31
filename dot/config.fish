@@ -69,6 +69,9 @@ alias yt-best="yt-dlp -f bestvideo+bestaudio "
 alias yt-mp3="yt-dlp --extract-audio --audio-format mp3 "
 alias yt-f="yt-dlp -f "
 
+# git 
+alias git-graph="git log --decorate --oneline --graph"
+
 # Julia
 alias jl="julia -t 24 -i --proj "
 
